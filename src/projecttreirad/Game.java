@@ -53,14 +53,14 @@ public class Game{
             
             if(win=='X')
             {            
-            System.out.println("X wins the game " + scoreplayer.getName1() + " !!!");
-            xscore++;      
-            System.out.println("Score: " + scoreplayer.setxScore(xscore));
-            count=0;
-            newboard();
-            drawboard();
-            changeplayer();
-            return win; 
+               System.out.println("X wins the game " + scoreplayer.getName1() + " !!!");
+               xscore++;      
+               System.out.println("Score: " + scoreplayer.setxScore(xscore));
+               count=0;
+               newboard();
+               drawboard();
+               changeplayer();
+               return win; 
             }  
             
         //check if player O wins
@@ -75,24 +75,24 @@ public class Game{
             
             if (win == 'O' )       
             {
-            System.out.println("O wins the game!!!" + scoreplayer.getName2());  
-            oscore++;
-            System.out.println("Score : " + scoreplayer.setoScore(oscore));
-            count=0;
-            newboard();
-            drawboard();         
-            changeplayer();
-            return win;       
+               System.out.println("O wins the game!!!" + scoreplayer.getName2());  
+               oscore++;
+               System.out.println("Score : " + scoreplayer.setoScore(oscore));
+               count=0;
+               newboard();
+               drawboard();         
+               changeplayer();
+               return win;       
             }
            
             //check if the game is a draw
             if(count==9)
             {  
-            System.out.println("Draw!");   
-            count=0;
-            newboard();
-            drawboard();
-            return draw;
+               System.out.println("Draw!");   
+               count=0;
+               newboard();
+               drawboard();
+               return draw;
             }
             return  win;
     }
@@ -114,14 +114,11 @@ public class Game{
         
         if(player=='X')player='O';
         else
-            player='X';
-     
+            player='X';     
     }  
        
     public int getCount(){
      
         return count;
-    
-    }
-    
+    }    
 }
